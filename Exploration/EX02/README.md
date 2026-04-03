@@ -6,42 +6,47 @@
 # PRT(Peer Review Template)
 - [x]  **1. 주어진 문제를 해결하는 완성된 코드가 제출되었나요?**
     - 문제에서 요구하는 최종 결과물이 첨부되었는지 확인
-        - ResNet-34, ResNet-50 각각 plain모델과 residual모델을 동일한 epoch만큼 학습시켰을 때의 그래프와 validation accuracy 기준으로 Ablation Study 결과표가 잘 작성되었다.
-    <img width="309" height="65" alt="image" src="https://github.com/user-attachments/assets/ad8ab268-ece5-4fd3-a211-03d48f0b44c5" />
-    
-    <img width="542" height="380" alt="image" src="https://github.com/user-attachments/assets/c0e37a2f-49bb-4ac6-8f77-2cd4576d8dad" />
+        - ResNet-34, ResNet-50 각각 plain모델과 residual모델을 동일한 epoch만큼 학습시켰을 때의 그래프와 validation accuracy 기준으로 Ablation Study 결과표가 잘 작성되었습니다.
+    <p>
+      <img width="309" height="65" alt="image" src="https://github.com/user-attachments/assets/ad8ab268-ece5-4fd3-a211-03d48f0b44c5" />
+    </p>
+    <p>
+      <img width="542" height="380" alt="image" src="https://github.com/user-attachments/assets/c0e37a2f-49bb-4ac6-8f77-2cd4576d8dad" />
+    </p>
     
 
 
-- **2. 전체 코드에서 가장 핵심적이거나 가장 복잡하고 이해하기 어려운 부분에 작성된 
+- [ ] **2. 전체 코드에서 가장 핵심적이거나 가장 복잡하고 이해하기 어려운 부분에 작성된 
 주석 또는 doc string을 보고 해당 코드가 잘 이해되었나요?**
     - 해당 코드 블럭을 왜 핵심적이라고 생각하는지 확인
     - 해당 코드 블럭에 doc string/annotation이 달려 있는지 확인
     - 해당 코드의 기능, 존재 이유, 작동 원리 등을 기술했는지 확인
     - 주석을 보고 코드 이해가 잘 되었는지 확인
-        - 책과 비슷한 구조로 코드를 작성해서 깔끔하고 구조화도 잘되어 있어서 이해가 잘 되었다.
+        - 책과 비슷한 구조로 코드를 작성해서 깔끔하고 구조화도 잘되어 있어서 이해가 잘 되었습니다.
+        - 모델 만드는 부분 코드에 주석으로 설명이 있으면 좋을 것 같습니다.
 
 
         
-- **3. 에러가 난 부분을 디버깅하여 문제를 해결한 기록을 남겼거나
+- [ ] **3. 에러가 난 부분을 디버깅하여 문제를 해결한 기록을 남겼거나
 새로운 시도 또는 추가 실험을 수행해봤나요?**
     - 문제 원인 및 해결 과정을 잘 기록하였는지 확인
     - 프로젝트 평가 기준에 더해 추가적으로 수행한 나만의 시도, 
     실험이 기록되어 있는지 확인
+        - 개발 중 겪은 이슈와 시도해본 방법이 주석으로 되어 있으면 좋을 것 같습니다.
       
         
 - [x]  **4. 회고를 잘 작성했나요?**
     - 주어진 문제를 해결하는 완성된 코드 내지 프로젝트 결과물에 대해
     배운점과 아쉬운점, 느낀점 등이 기록되어 있는지 확인
     - 전체 코드 실행 플로우를 그래프로 그려서 이해를 돕고 있는지 확인
-        - 아래 글과 같이 프로젝트 결과물에 대해 회고를 잘 썼고, 프로젝트 맨 우측 상단에 논문에 있는 그래프를 보여줘서 실행 플로우가 한눈에 들어온다.
+        - 아래 글과 같이 프로젝트 결과물에 대해 회고를 잘 썼고, 프로젝트 맨 우측 상단에 논문에 있는 그래프를 보여줘서 실행 플로우가 한눈에 들어옵니다.
     <img width="665" height="138" alt="image" src="https://github.com/user-attachments/assets/819b46da-2e31-4d0f-92ae-f9e2d6cc1ee0" />
 
         
 - [x]  **5. 코드가 간결하고 효율적인가요?**
     - 파이썬 스타일 가이드 (PEP8) 를 준수하였는지 확인
     - 코드 중복을 최소화하고 범용적으로 사용할 수 있도록 함수화/모듈화했는지 확인
-        - 함수화 및 모듈화를 잘했다. BasicBlock과 BottleneckBlock을 독립적인 클래스로 설계하여, 모델을 범용적으로 생성할 수 있도록 구조화되었다.
+        - 함수화 및 모듈화를 잘했다. BasicBlock과 BottleneckBlock을 독립적인 클래스로 설계하여, 모델을 범용적으로 생성할 수 있도록 구조화되었습니다.
     <p align="center">
     <img src="https://github.com/user-attachments/assets/5845c229-c003-42d5-bdf6-a3560c1c068c" width="32%" />
     <img src="https://github.com/user-attachments/assets/178c78c4-c225-4a93-875a-cf1339332ed5" width="32%" />
@@ -51,8 +56,5 @@
 
 
 # 회고(참고 링크 및 코드 개선)
-```
-# 리뷰어의 회고를 작성합니다.
-# 코드 리뷰 시 참고한 링크가 있다면 링크와 간략한 설명을 첨부합니다.
-# 코드 리뷰를 통해 개선한 코드가 있다면 코드와 간략한 설명을 첨부합니다.
-```
+ResNet 구조가 잘 드러나도록 코드가 작성되어 있어 가독성이 매우 좋았습니다. 코드가 깔끔하게 정리되어 있어 전체적인 흐름을 파악하기 쉬웠습니다. 또한 학습 결과를 그래프와 표로 깔끔하게 정리해 두어서 모델의 성능을 한눈에 이해할 수 있었습니다.
+특히 README 상단에 논문에 수록된 그래프를 먼저 제시해 주신 점이 인상적이었습니다. 코드를 읽기 전에 모델의 전체 구조를 미리 파악할 수 있어서 코드 리뷰를 진행하는 데 큰 도움이 되었습니다.
